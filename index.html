@@ -39,30 +39,79 @@
           </ul>
         </div>
       </div>
+
       <div class="cotizacion">
         <h3>Tu SOAT 100% digital</h3>
         <form id="cotizacion-form">
           <label for="placa">Ingresa tu placa:</label>
           <input type="text" id="placa" name="placa" required placeholder="ABC123">
+      
+          <label for="tipo-vehiculo">Selecciona el tipo de vehículo:</label>
+          <select id="tipo-vehiculo" name="tipo-vehiculo">
+              <option value="" disabled selected>-- Selecciona un tipo --</option>
+              <option value="automovil">Automóvil</option>
+              <option value="motocicleta">Motocicleta</option>
+              <option value="camion">Camión</option>
+              <option value="bus">Bus</option>
+              <option value="microbus">Microbús</option>
+              <option value="pickup">Pickup</option>
+              <option value="tractocamion">Tractocamión</option>
+              <option value="volqueta">Volqueta</option>
+              <option value="bicicleta">Bicicleta con motor</option>
+          </select>
+          <label for="modelo">Selecciona el modelo del vehículo:</label>
+          <input type="number" id="modelo" name="modelo" min="1980" max="2025" required placeholder="Ej: 2015">
+
+          <label for="cilindraje">Selecciona el cilindraje:</label>
+          <select id="cilindraje" name="cilindraje">
+              <option value="" disabled selected>-- Selecciona un cilindraje --</option>
+              <option value="-1500">Menos de 1.500 c.c.</option>
+              <option value="1500-2500">Entre 1.500 y 2.500 c.c.</option>
+              <option value="2500+">Más de 2.500 c.c.</option>
+          </select>
           <button type="submit">Cotizar</button>
-          <button id="btnPagar">Pagar</button>
         </form>
+
+        <button id="btnPagar">Pagar</button>
         <div class="whatsapp-btn">
           <button id="btnWhatsapp">WhatsApp</button>
         </div>
       </div>
     </section>
 
+    <footer>
+      <ul>
+          <li><a href="#razones">Razones para comprar aquí</a></li>
+          <li><a href="#beneficios">Beneficios del SOAT</a></li>
+          <li><a href="#fraude">Evita el fraude</a></li>
+          <li><a href="#reclamos">¿Cómo reclamas?</a></li>
+      </ul>
+    </footer>
     
+    <!-- Secciones adicionales -->
+    <section id="razones">
+      <h2>Razones para comprar aquí</h2>
+      <p>Compra tu SOAT en línea de manera segura y rápida.</p>
+    </section>
+
+    <section id="beneficios">
+      <h2>Beneficios del SOAT</h2>
+      <p>Protección para ti y los demás en caso de accidente.</p>
+    </section>
+
+    <section id="fraude">
+      <h2>Evita el fraude</h2>
+      <p>Sigue nuestras recomendaciones para evitar estafas.</p>
+    </section>
+
+    <section id="reclamos">
+      <h2>¿Cómo reclamas?</h2>
+      <p>Proceso para realizar un reclamo de tu SOAT.</p>
+    </section>
+  </main>
+
   <!-- Pie de página -->
-  <footer>
-    <ul>
-      <li><a href="#razones">Razones para comprar aquí</a></li>
-      <li><a href="#beneficios">Beneficios del SOAT</a></li>
-      <li><a href="#fraude">Evita el fraude</a></li>
-      <li><a href="#reclamos">¿Cómo reclamas?</a></li>
-    </ul>
-  </footer>
+
 
   <!-- Script -->
   <script src="script.js"></script>
